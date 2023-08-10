@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouEmbed by Thonik</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDpfbLIEsX2yzAAIo2Y_bem1VzvyiIJ4r8",
+    authDomain: "youembed-b103c.firebaseapp.com",
+    projectId: "youembed-b103c",
+    storageBucket: "youembed-b103c.appspot.com",
+    messagingSenderId: "687498140474",
+    appId: "1:687498140474:web:85928c62309a7d92780e03"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+<script defer src="functions.js"></script>
+  </head>
+  <body>
+
+    <div id="title">
+      <h2>Hey Conjo</h2>
+    </div>
+
+    <h1>Youtube Link:</h1>
+    <input type="text" id="yturl">
+    <input type="submit" id="submitBtn" value="Submit">
+    <input type="submit" id="submitBtnDelete" value="Delete Video">
+
+   <br><br>
+
+    <div>
+      <iframe 
+      id="ytplayer" 
+      type="text/html" 
+      width="640" 
+      height="360"
+      frameborder="0"
+      >
+      </iframe>
+    </div>
+
+  </body>
+</html>
